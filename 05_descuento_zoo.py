@@ -16,4 +16,3 @@ if (edad <= 35 and edad >= 25 and tipo_carnet == "E") or edad < 10 or (edad >= 6
     print("Usted aplica para descuento")
 else:
     print("Usted no aplicas para descuento, lo sentimos... ")
-

@@ -27,3 +27,25 @@ if opcion == "A":
                         "esta a la derecha y el otro a la izquierda, cual tomas?")
 
                   opcion = input("[OPCION (A) - Izquierda] | [OPCION (B) - Derecha] ")
+
+                  if opcion == "A":
+                        print("La habitacion se hace cada vez mas oscura, ves tan poco que caes en un agujero en el suelo con"
+                              "pinchos, mueres a las 2 horas de forma lenta y dolorosa \nFIN")
+                  elif opcion == "B:"
+                        print("Encuentras la salida, en la puerta hay aparcado un Ferrari espacial, te montas, es tu dia de"
+                              " suerte, las llaves estan puestas, Huyes hacia el horizonte\nFIN")
+
+            elif opcion == "B":
+                  print("La rana te devora, mueres en forma rapida, el veneno hace efecto de casi de manera instantanea.\nFIN")
+            else:
+                  print("No has elegido ninguna opcion, simplemente mueres.")
+      else:
+            print("No has elegido ninguna opcion, simplemente mueres.")
+
+elif opcion == "B":
+      print("Caes en una zona inundada, el agua te llega hasta las rodillas, avanzas durante media hora y finalmente"
+            " llegas a una zona abierta, seca y con luz, parecen alcantarillas\nEncuentras un palo largo, parece"
+            " algo pesado, pero podria servir, lo coges?")
+      opcion = input("[OPCION (A) - SI] | [OPCION (B - NO)]: ")
+
+      palo_en_inventario = False

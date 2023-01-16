@@ -54,3 +54,34 @@ elif opcion == "B":
     if opcion == "A":
         print("Coges el palo")
         palo_en_inventario = True
+    elif opcion == "B":
+        print("No coges el palo")
+    else:
+        print("No has elegido ninguna opcion, simplemente mueres")
+        exit()
+
+    numero_random_rata = random.randint(1, 100)
+    print("Sigues adelante, encuentras una rata de 2 metros, la rata te pregunta si cuanto es 13 * {}".format(numero_random_rata))
+    opcion = int(input("Cual es el resultado?"))
+
+    if opcion == 13 * numero_random_rata:
+        print("La rata te asesina en el acto, resulta que no tolera a los cerebritos.\nFIN")
+    else:
+        print("La rata abre una puerta delante de ti, parece un pasillo que lleva hasta la salida. Lo recorres, "
+              "llegas al final, el tunel se derrumba detras de ti, no hay salida mas que una especie de boca de "
+              "alcantarilla, pero esta lejos de tu alcance, Que haces?")
+
+        opcion = input("[OPCION (A) - Esperas a que alguien te rescate] | [OPCION (B) - Intentas salir]")
+
+        if opcion == "A":
+            print("Un monton de ratas aparecen y te devoran vivo\nFIN")
+        elif opcion == "B" and palo_en_inventario:
+            print("Usas el palo que cogiste antes para impulsarte, consigues trepar y salir del laberinto. En la"
+                  " puerta hay aparcado un Ferrari espacial, te montas, es tu dia de suerte, las llaves estan puestas,"
+                  " huyes hacia el horizonte\nFIN")
+        else:
+            print("No tienes como subir, si solo tuvieras un palo... Pero no lo tienes verdad? Asi que finalmente te"
+                  " quedas atrapado. \n\nPasado un rato un monton de ratas aparecen y te devoran vivo, es tu fin.\nFIN")
+
+else:
+    print("No has elegido ninguna opcion, simplemente mueres.")

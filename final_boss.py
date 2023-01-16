@@ -3,7 +3,7 @@ import random
 print("Juego de la mazmorra\n"
       "----------------------\n"
       "tu y tu compañero de celda os acabais de escapar de la prision espacial, habeis burlado a los guardias y os\n"
-      "dirigis hacia al exterior. Entrais en una mazmorra conterolada por mounstruos alienigenas, uno de los guardias \n"
+      "dirigis hacia al exterior. Entrais en una mazmorra conterolada por mounstruos alienigenas, uno de los guardias\n"
       "ataca a tu compañero, se lo lleva pero tu pasas desapercibido escondido en las sombras. El guardia se retira, \n"
       "es tu posibilidad de escapar. Hacia donde te diriges?\n"
       "\n"
@@ -61,7 +61,8 @@ elif opcion == "B":
         exit()
 
     numero_random_rata = random.randint(1, 100)
-    print("Sigues adelante, encuentras una rata de 2 metros, la rata te pregunta si cuanto es 13 * {}".format(numero_random_rata))
+    print("Sigues adelante, encuentras una rata de 2 metros, la rata te pregunta si cuanto es 13 * {}"
+          .format(numero_random_rata))
     opcion = int(input("Cual es el resultado?"))
 
     if opcion == 13 * numero_random_rata:

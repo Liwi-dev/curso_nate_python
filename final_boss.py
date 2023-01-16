@@ -31,7 +31,7 @@ if opcion == "A":
                   if opcion == "A":
                         print("La habitacion se hace cada vez mas oscura, ves tan poco que caes en un agujero en el suelo con"
                               "pinchos, mueres a las 2 horas de forma lenta y dolorosa \nFIN")
-                  elif opcion == "B:"
+                  elif opcion == "B":
                         print("Encuentras la salida, en la puerta hay aparcado un Ferrari espacial, te montas, es tu dia de"
                               " suerte, las llaves estan puestas, Huyes hacia el horizonte\nFIN")
 
@@ -49,3 +49,7 @@ elif opcion == "B":
       opcion = input("[OPCION (A) - SI] | [OPCION (B - NO)]: ")
 
       palo_en_inventario = False
+
+      if opcion == "A":
+            print("Coges el palo")
+            palo_en_inventario = True

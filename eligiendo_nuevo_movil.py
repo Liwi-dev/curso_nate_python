@@ -13,7 +13,7 @@ if ios_android == "android":
             print("Comprate un android calidad-precio")
 
 
-if ios_android == "ios":
+elif ios_android == "ios":
     if tienes_dinero == "si":
         print("Comprate el iphone 14 Pro Max")
     elif tienes_dinero == "no":

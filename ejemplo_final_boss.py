@@ -2,10 +2,10 @@ import random
 
 titulo = "El laberinto Mágico"
 print("\n" + titulo + "\n" + "·" * len(titulo) + "\n"
-                                                 "Había una vez un guerrero llamado Rafael que estaba atrapado en un laberinto mágico.Cada vez que tomaba un camino,""\n"
-                                                 "se encontraba con una nueva bifurcación.Rafael tenía que tomar decisiones rápidas para avanzar a través del""\n"
-                                                 "laberinto y derrotar al dragón final que guardaba el tesoro.""\n""\n"
-                                                 "En uno de los primeros caminos, Rafael se encontró con una bifurcación que lo llevaba a la derecha o a la izquierda.""\n")
+"Había una vez un guerrero llamado Rafael que estaba atrapado en un laberinto mágico.Cada vez que tomaba un camino,""\n"
+"se encontraba con una nueva bifurcación.Rafael tenía que tomar decisiones rápidas para avanzar a través del""\n"
+"laberinto y derrotar al dragón final que guardaba el tesoro.""\n""\n"
+"En uno de los primeros caminos, Rafael se encontró con una bifurcación que lo llevaba a la derecha o a la izquierda.""\n")
 
 opcion = input("[OPCION (A) - Camino de la izquierda | OPCION (B) - Camino de la derecha]:""\n")
 

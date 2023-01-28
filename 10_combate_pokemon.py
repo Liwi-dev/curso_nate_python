@@ -6,7 +6,7 @@ vida_squirtle = 90
 while vida_pikachu > 0 and vida_squirtle > 0:
     # continua el combate
 
-    #turno pikachu
+    # Turno Pikachu
     print("Turno de Pikachu")
     ataque_pikachu = randint(1, 2)
     if ataque_pikachu == 1:
@@ -14,4 +14,14 @@ while vida_pikachu > 0 and vida_squirtle > 0:
         print("Pikachu ha usado: ¡BOLA VOLTIO!")
         vida_squirtle -= 10
     else:
-        print("")
+        print("Pikachu ha usado ¡ONDA TRUENO!")
+        vida_squirtle -= -11
+
+    # Turno Squirtle
+    print("Turno de Squirtle")
+    ataque_squirtle = None
+
+    while ataque_squirtle != "P" and ataque_squirtle != "A" and ataque_squirtle != "B":
+        ataque_squirtle = input("¿Que ataque quieres realizar? [P]Placaje, [A]Pistola Agua, [B]Burbuja")
+    if ataque_squirtle == "P":
+        vida_pikachu -= 10

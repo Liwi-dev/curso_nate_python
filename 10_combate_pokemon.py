@@ -25,7 +25,7 @@ while vida_pikachu > 0 and vida_squirtle > 0:
     barra_vida = "#" * int(vida_pikachu / vida_total_pikachu * 20)
     barra_vida = "#" * int(vida_squirtle / vida_total_squirtle * 20)
     falta_vida = "" * (20 - len(barra_vida))
-    print("{}: [{}{}] {}/{}".format("Pikachu", barra_vida, falta_vida, vida_pikachu, vida_total_pikachu))
+    print("{}:  [{}{}] {}/{}".format("Pikachu", barra_vida, falta_vida, vida_pikachu, vida_total_pikachu))
     print("{}: [{}{}] {}/{}".format("Squirtle", barra_vida, falta_vida, vida_squirtle, vida_total_squirtle))
     input("Enter para continuar...""\n\n")
 

@@ -2,6 +2,8 @@ from random import randint
 
 vida_total_pikachu = 80
 vida_total_squirtle = 90
+tamano_barra = 20
+
 
 vida_pikachu = vida_total_pikachu
 vida_squirtle = vida_total_squirtle
@@ -22,9 +24,9 @@ while vida_pikachu > 0 and vida_squirtle > 0:
         vida_squirtle -= 11
 
 
-    barra_vida = "#" * int(vida_pikachu / vida_total_pikachu * 20)
-    barra_vida = "#" * int(vida_squirtle / vida_total_squirtle * 20)
-    falta_vida = "" * (20 - len(barra_vida))
+    barra_vida = "#" * int(vida_pikachu / vida_total_pikachu * tamano_barra)
+    barra_vida = "#" * int(vida_squirtle / vida_total_squirtle * tamano_barra)
+    falta_vida = "" * (tamano_barra - len(barra_vida))
     print("{}:  [{}{}] {}/{}".format("Pikachu", barra_vida, falta_vida, vida_pikachu, vida_total_pikachu))
     print("{}: [{}{}] {}/{}".format("Squirtle", barra_vida, falta_vida, vida_squirtle, vida_total_squirtle))
     input("Enter para continuar...""\n\n")
@@ -47,9 +49,9 @@ while vida_pikachu > 0 and vida_squirtle > 0:
         vida_pikachu -= 9
         print("Squirtle ha usado ¡BURBUJA!")
 
-    barra_vida = "#" * int(vida_pikachu / vida_total_pikachu * 20)
-    barra_vida = "#" * int(vida_squirtle / vida_total_squirtle * 20)
-    falta_vida = "-" * (20 - len(barra_vida))
+    barra_vida = "#" * int(vida_pikachu / vida_total_pikachu * tamano_barra)
+    barra_vida = "#" * int(vida_squirtle / vida_total_squirtle * tamano_barra)
+    falta_vida = "-" * (tamano_barra - len(barra_vida))
     print("{}: [{}{}] {}/{}".format("Pikachu", barra_vida, falta_vida, vida_pikachu, vida_total_pikachu))
     print("{}: [{}{}] {}/{}".format("Squirtle", barra_vida, falta_vida, vida_squirtle, vida_total_squirtle))
     input("Enter para continuar...""\n\n")

@@ -2,7 +2,6 @@ lista_compra = []
 
 opcion = None
 
-
 while opcion != "Q":
     opcion = input("¿Que desea comprar? [(Q) para salir]\n")
     if opcion == "Q":
@@ -18,4 +17,4 @@ while opcion != "Q":
             print("No añadimos {} a la lista".format(lista_compra[-1]))
             lista_compra.pop(-1)
     elif opcion in lista_compra:
-        print("{} ya esta en la lista!".format(str(lista_compra)))
+        print("¡"+"".join(lista_compra), "ya esta en la lista!")

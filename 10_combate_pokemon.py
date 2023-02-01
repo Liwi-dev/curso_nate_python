@@ -1,4 +1,6 @@
 from random import randint
+import os
+
 
 vida_total_pikachu = 80
 vida_total_squirtle = 90
@@ -25,11 +27,14 @@ while vida_pikachu > 0 and vida_squirtle > 0:
 
 
     barra_vida = "#" * int(vida_pikachu / vida_total_pikachu * tamano_barra)
-    barra_vida = "#" * int(vida_squirtle / vida_total_squirtle * tamano_barra)
-    falta_vida = "" * (tamano_barra - len(barra_vida))
+    barra_vida2 = "#" * int(vida_squirtle / vida_total_squirtle * tamano_barra)
+    falta_vida = "-" * (tamano_barra - len(barra_vida))
     print("{}:  [{}{}] {}/{}".format("Pikachu", barra_vida, falta_vida, vida_pikachu, vida_total_pikachu))
-    print("{}: [{}{}] {}/{}".format("Squirtle", barra_vida, falta_vida, vida_squirtle, vida_total_squirtle))
+    print("{}: [{}{}] {}/{}".format("Squirtle", barra_vida2, falta_vida, vida_squirtle, vida_total_squirtle))
     input("Enter para continuar...""\n\n")
+    os.system("cls")
+
+
 
 
     # Turno Squirtle
@@ -37,7 +42,8 @@ while vida_pikachu > 0 and vida_squirtle > 0:
     ataque_squirtle = None
 
     while ataque_squirtle != "P" and ataque_squirtle != "A" and ataque_squirtle != "B":
-        ataque_squirtle = input("¿Que ataque quieres realizar? [P]Placaje, [A]Pistola Agua, [B]Burbuja""\n\n")
+        ataque_squirtle = input("¿Que ataque quieres realizar? [P]Placaje, [A]Pistola Agua, [B]Burbuja [N]No hacer nada""\n\n")
+        os.system("cls")
 
     if ataque_squirtle == "P":
         vida_pikachu -= 10
@@ -48,14 +54,21 @@ while vida_pikachu > 0 and vida_squirtle > 0:
     elif ataque_squirtle == "B":
         vida_pikachu -= 9
         print("Squirtle ha usado ¡BURBUJA!")
+    elif ataque_squirtle == "N":
+        print("Squirtle no hace nada")
 
     barra_vida = "#" * int(vida_pikachu / vida_total_pikachu * tamano_barra)
-    barra_vida = "#" * int(vida_squirtle / vida_total_squirtle * tamano_barra)
+    barra_vida2 = "#" * int(vida_squirtle / vida_total_squirtle * tamano_barra)
     falta_vida = "-" * (tamano_barra - len(barra_vida))
-    print("{}: [{}{}] {}/{}".format("Pikachu", barra_vida, falta_vida, vida_pikachu, vida_total_pikachu))
-    print("{}: [{}{}] {}/{}".format("Squirtle", barra_vida, falta_vida, vida_squirtle, vida_total_squirtle))
+    print("{}:  [{}{}] {}/{}".format("Pikachu", barra_vida, falta_vida, vida_pikachu, vida_total_pikachu))
+    print("{}: [{}{}] {}/{}".format("Squirtle", barra_vida2, falta_vida, vida_squirtle, vida_total_squirtle))
     input("Enter para continuar...""\n\n")
+    os.system("cls")
 
+    if vida_pikachu <= 0:
+        vida_pikachu = 0
+    elif vida_squirtle <= 0:
+        vida_squirtle = 0
 
 if vida_pikachu > vida_squirtle:
     print("¡Ha ganado Pikachu!")

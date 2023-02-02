@@ -9,10 +9,8 @@ mayusculas = 3
 """
 import string
 
-
 texto_usuario = input("Introduzca su texto: ")
 letras_mayusculas = 0
-
 
 for letra in texto_usuario:
     if letra in string.ascii_uppercase:

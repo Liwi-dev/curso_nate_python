@@ -18,13 +18,20 @@ numero = int(input("Numero a multiplicar: "))
 for n in range(1, 11)
     print("{} x {} = {}".format(numero, n, n * numero))
 
-"""
-
-print("Introduce un numero y te dire su tabla de multiplicar\n")
-numero_usuario = int(input("Introduzca tu numero: "))
 
 for tabla in range(1, 11):
     multiplicacion = numero_usuario * tabla
     multiplo = tabla % 2
     if multiplo == 0:
         print("{} x {} = {}".format(numero_usuario, tabla, multiplicacion))
+
+
+"""
+
+print("Introduce un numero y te dire su tabla de multiplicar\n")
+numero_usuario = int(input("Introduzca su numero: "))
+
+for tabla in range(1, 11):
+    multiplicacion = numero_usuario * tabla
+    print(numero_usuario, "x", tabla, "=", multiplicacion)
+

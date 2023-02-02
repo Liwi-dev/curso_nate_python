@@ -9,7 +9,7 @@ texto_usuario = "Hola, me llamo Nate. ¿Tu como te llamas?"
 
 espacios_texto = " "
 puntos_texto = "."
-comas_texto= ","
+comas_texto = ","
 
 espacios_encontrados = 0
 puntos_encontrados = 0
@@ -23,6 +23,6 @@ for letra in texto_usuario:
     elif letra in comas_texto:
         comas_encontrados += 1
 
-print("Espacios encontrados: {}".format(espacios_encontrados))
-print("Puntos encontrados: {}".format(puntos_encontrados))
-print("Comas encontrados: {}".format(comas_encontrados))
+print("Espacios encontrados: {}\nPuntos encontrados: {}\nComas encontrados: {}".format(espacios_encontrados,
+                                                                                       puntos_encontrados,
+                                                                                       comas_encontrados))

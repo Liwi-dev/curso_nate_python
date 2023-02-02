@@ -25,4 +25,6 @@ numero_usuario = int(input("Introduzca tu numero: "))
 
 for tabla in range(1, 11):
     multiplicacion = numero_usuario * tabla
-    print(numero_usuario, "x", tabla, "=", multiplicacion)
+    multiplo = tabla % 2
+    if multiplo == 0:
+        print("{} x {} = {}".format(numero_usuario, tabla, multiplicacion))

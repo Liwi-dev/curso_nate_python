@@ -25,4 +25,4 @@ numero_usuario = int(input("Introduzca tu numero: "))
 
 for tabla in range(1, 11):
     multiplicacion = numero_usuario * tabla
-    print(numero_usuario, "x", multiplicacion)
+    print(numero_usuario, "x", tabla, "=", multiplicacion)

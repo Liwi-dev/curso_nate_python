@@ -9,19 +9,15 @@ numero_mas_grande = 6
 
 """
 print("Agregando numeros a una lista")
-"""
-numeros = []
-usuario = None
 
-for numero in:
-    usuario = int(input("¿Que numero quieres agregar? ([Q] para salir): "))
-    if usuario == "Q":
-        print("Tu numero mas pequeño es: {}".format(min(numeros)))
-        print("TGu numero mas grande es: {}".format(max(numeros)))
-        break
-    elif usuario in numeros:
-        print("{} ya esta en la lista".format(usuario))
-    elif input("¿Seguro quiere añadir {} a la lista? [si]/[no] ".format(usuario)) == "si":
-        numeros.append(usuario)
-"""
+numerous_usuario = []
+usuario = int(input("¿Que numero quieres agregar? ([Q] para salir): "))
+numerous_usuario.append(usuario)
+
+while input("¿Quiere añadir mas numeros? [si]/[no] ") == "si":
+    usuario = int(input("Introduzca un numero a la lista: "))
+    numerous_usuario.append(usuario)
+else:
+    print("Tu numero mas pequeño es: {}".format(min(numerous_usuario)))
+    print("Tu numero mas grande es: {}".format(max(numerous_usuario)))
 

@@ -8,7 +8,7 @@ numero_mas_pequeno = 1
 numero_mas_grande = 6
 
 """
-# Solucion de Nate
+# Solucion de Nate avanzada
 
 
 numeros_introducidos = input("introduzca los numeros separados por coma: ")  # 1,2,3,4,5,6,7,8,9
@@ -36,4 +36,14 @@ else:
     print("Tu numero mas grande es: {}".format(max(numerous_usuario)))
 """
 
-# probando git despues de la formateada
+# solucion nate principiante
+
+"""
+numeros_introducidos = input("introduzca los numeros separados por coma: ")  # 1,2,3,4,5,6,7,8,9
+numeros_usuario = numeros_introducidos.split(",")
+numeros_usuario_limpios = []
+
+
+for numero in numeros_usuario:
+      numeros_usuario_limpios.append(int(numero))
+"""

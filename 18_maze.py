@@ -34,6 +34,8 @@ while True:
 
     if direction == "w":
         my_position[POS_Y] -= 1
+        if my_position[POS_Y] < 0:
+            my_position[POS_Y] = MAP_HEIGHT - 1
     elif direction == "s":
         my_position[POS_Y] += 1
     elif direction == "a" :

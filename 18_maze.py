@@ -1,5 +1,7 @@
 """Maze Game"""
-import random, readchar, os
+import os
+import random
+import readchar
 
 """Variables constants"""
 POS_X = 0
